@@ -6,18 +6,19 @@
 //  Copyright (c) 2014 Miguel Martín-Nieto. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "MainViewController.h"
 
-@interface ViewController ()
+@interface MainViewController ()
 
 @end
 
-@implementation ViewController
+@implementation MainViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.title = @"PICTURESAPP";
 }
 
 - (void)didReceiveMemoryWarning
