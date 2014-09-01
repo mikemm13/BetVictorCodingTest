@@ -8,9 +8,12 @@
 
 #import "AppDelegate.h"
 #import "CoreDataManager.h"
+#import "ImagesManager.h"
+#import "MainViewController.h"
 
 @interface AppDelegate ()
 @property (strong, nonatomic) CoreDataManager *coreDataManager;
+@property (strong, nonatomic) ImagesManager *imagesManager;
 @end
 
 @implementation AppDelegate
@@ -18,6 +21,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
+    MainViewController *mainViewController = (MainViewController *)navigationController.topViewController;
+    mainViewController.managedObjectContext = self.coreDataManager.managedObjectContext;
+    [self.imagesManager copyFolder];
     return YES;
 }
 
@@ -27,6 +34,14 @@
     }
     return _coreDataManager;
 }
+
+- (ImagesManager *)imagesManager{
+    if (!_imagesManager) {
+        _imagesManager = [[ImagesManager alloc] init];
+    }
+    return _imagesManager;
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

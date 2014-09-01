@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		491CA5FF19B4676500E56710 /* ImagesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 491CA5FE19B4676500E56710 /* ImagesManager.m */; };
+		491CA60119B46CE900E56710 /* PreloadedImages in Resources */ = {isa = PBXBuildFile; fileRef = 491CA60019B46CE900E56710 /* PreloadedImages */; };
 		4926C6B319B36C7F00F769CF /* BetVictor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4926C6B119B36C7F00F769CF /* BetVictor.xcdatamodeld */; };
 		4926C6C619B38CFC00F769CF /* DataPreloaderUtility.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 4926C6C519B38CFC00F769CF /* DataPreloaderUtility.sqlite */; };
 		4926C6CA19B38E8400F769CF /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4926C6C919B38E8400F769CF /* CoreDataManager.m */; };
@@ -14,6 +16,9 @@
 		4926C6CF19B3904800F769CF /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 4926C6CE19B3904800F769CF /* Image.m */; };
 		4926C6D219B398E400F769CF /* map@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4926C6D019B398E400F769CF /* map@2x.png */; };
 		4926C6D319B398E400F769CF /* user@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4926C6D119B398E400F769CF /* user@2x.png */; };
+		4926C6D619B39FF200F769CF /* PictureLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4926C6D519B39FF200F769CF /* PictureLibraryViewController.m */; };
+		4926C6D919B3C9DB00F769CF /* PictureLibraryTableViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4926C6D819B3C9DB00F769CF /* PictureLibraryTableViewManager.m */; };
+		4926C6DD19B3DEFC00F769CF /* PictureLibraryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4926C6DC19B3DEFC00F769CF /* PictureLibraryTableViewCell.m */; };
 		493E87D419B228E600647553 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 493E87D319B228E600647553 /* Foundation.framework */; };
 		493E87D619B228E600647553 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 493E87D519B228E600647553 /* CoreGraphics.framework */; };
 		493E87D819B228E600647553 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 493E87D719B228E600647553 /* UIKit.framework */; };
@@ -41,6 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		491CA5FD19B4676500E56710 /* ImagesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagesManager.h; sourceTree = "<group>"; };
+		491CA5FE19B4676500E56710 /* ImagesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagesManager.m; sourceTree = "<group>"; };
+		491CA60019B46CE900E56710 /* PreloadedImages */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PreloadedImages; sourceTree = "<group>"; };
 		4926C6B219B36C7F00F769CF /* BetVictor.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BetVictor.xcdatamodel; sourceTree = "<group>"; };
 		4926C6C519B38CFC00F769CF /* DataPreloaderUtility.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = DataPreloaderUtility.sqlite; sourceTree = "<group>"; };
 		4926C6C819B38E8400F769CF /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
@@ -50,6 +58,12 @@
 		4926C6CE19B3904800F769CF /* Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Image.m; sourceTree = "<group>"; };
 		4926C6D019B398E400F769CF /* map@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map@2x.png"; sourceTree = "<group>"; };
 		4926C6D119B398E400F769CF /* user@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user@2x.png"; sourceTree = "<group>"; };
+		4926C6D419B39FF200F769CF /* PictureLibraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureLibraryViewController.h; sourceTree = "<group>"; };
+		4926C6D519B39FF200F769CF /* PictureLibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureLibraryViewController.m; sourceTree = "<group>"; };
+		4926C6D719B3C9DB00F769CF /* PictureLibraryTableViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureLibraryTableViewManager.h; sourceTree = "<group>"; };
+		4926C6D819B3C9DB00F769CF /* PictureLibraryTableViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureLibraryTableViewManager.m; sourceTree = "<group>"; };
+		4926C6DB19B3DEFC00F769CF /* PictureLibraryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureLibraryTableViewCell.h; sourceTree = "<group>"; };
+		4926C6DC19B3DEFC00F769CF /* PictureLibraryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureLibraryTableViewCell.m; sourceTree = "<group>"; };
 		493E87D019B228E600647553 /* BetVictorCodingTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetVictorCodingTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		493E87D319B228E600647553 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		493E87D519B228E600647553 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -109,8 +123,13 @@
 		4926C6B819B36D8000F769CF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4926C6DA19B3DEE300F769CF /* Cells */,
 				493E87E819B228E600647553 /* MainViewController.h */,
 				493E87E919B228E600647553 /* MainViewController.m */,
+				4926C6D419B39FF200F769CF /* PictureLibraryViewController.h */,
+				4926C6D519B39FF200F769CF /* PictureLibraryViewController.m */,
+				4926C6D719B3C9DB00F769CF /* PictureLibraryTableViewManager.h */,
+				4926C6D819B3C9DB00F769CF /* PictureLibraryTableViewManager.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -120,8 +139,19 @@
 			children = (
 				4926C6C819B38E8400F769CF /* CoreDataManager.h */,
 				4926C6C919B38E8400F769CF /* CoreDataManager.m */,
+				491CA5FD19B4676500E56710 /* ImagesManager.h */,
+				491CA5FE19B4676500E56710 /* ImagesManager.m */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		4926C6DA19B3DEE300F769CF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4926C6DB19B3DEFC00F769CF /* PictureLibraryTableViewCell.h */,
+				4926C6DC19B3DEFC00F769CF /* PictureLibraryTableViewCell.m */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		493E87C719B228E600647553 = {
@@ -158,6 +188,7 @@
 		493E87D919B228E600647553 /* BetVictorCodingTest */ = {
 			isa = PBXGroup;
 			children = (
+				491CA60019B46CE900E56710 /* PreloadedImages */,
 				4926C6D019B398E400F769CF /* map@2x.png */,
 				4926C6D119B398E400F769CF /* user@2x.png */,
 				4926C6C719B38E7100F769CF /* Manager */,
@@ -281,6 +312,7 @@
 				493E87EC19B228E600647553 /* Images.xcassets in Resources */,
 				4926C6D219B398E400F769CF /* map@2x.png in Resources */,
 				493E87DE19B228E600647553 /* InfoPlist.strings in Resources */,
+				491CA60119B46CE900E56710 /* PreloadedImages in Resources */,
 				4926C6D319B398E400F769CF /* user@2x.png in Resources */,
 				493E87E719B228E600647553 /* Main.storyboard in Resources */,
 				4926C6C619B38CFC00F769CF /* DataPreloaderUtility.sqlite in Resources */,
@@ -306,8 +338,12 @@
 				4926C6B319B36C7F00F769CF /* BetVictor.xcdatamodeld in Sources */,
 				493E87EA19B228E600647553 /* MainViewController.m in Sources */,
 				4926C6CF19B3904800F769CF /* Image.m in Sources */,
+				4926C6D919B3C9DB00F769CF /* PictureLibraryTableViewManager.m in Sources */,
+				4926C6D619B39FF200F769CF /* PictureLibraryViewController.m in Sources */,
+				4926C6DD19B3DEFC00F769CF /* PictureLibraryTableViewCell.m in Sources */,
 				493E87E419B228E600647553 /* AppDelegate.m in Sources */,
 				493E87E019B228E600647553 /* main.m in Sources */,
+				491CA5FF19B4676500E56710 /* ImagesManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
