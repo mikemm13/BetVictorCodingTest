@@ -12,7 +12,7 @@
 
 @interface PictureLibraryTableViewManager ()
 
-@property (strong, nonatomic)NSFetchedResultsController *fetchedResultsController;
+
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (strong, nonatomic) ImagesManager *imagesManager;
 @end
@@ -65,10 +65,10 @@ NSInteger const dashboardItemsHeight = 150;
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     PictureLibraryTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"imageCell"];
-    Image *item = (Image *)[self.fetchedResultsController objectAtIndexPath:indexPath];
-    UIImage *image = [self.imagesManager loadImageNamed:item.name];
+    Image *itemSelected = (Image *)[self.fetchedResultsController objectAtIndexPath:indexPath];
+    UIImage *image = [self.imagesManager loadImageNamed:itemSelected.name];
     cell.previewImageView.image = image;
-    cell.pictureLabel.text = item.name;
+    cell.pictureLabel.text = itemSelected.name;
     
     return cell;
 }

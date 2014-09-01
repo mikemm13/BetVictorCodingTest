@@ -8,6 +8,8 @@
 
 #import "PictureLibraryViewController.h"
 #import "PictureLibraryTableViewManager.h"
+#import "PictureDetailsViewController.h"
+#import "Image.h"
 
 @interface PictureLibraryViewController ()
 @property (strong, nonatomic) PictureLibraryTableViewManager *tableViewManager;
@@ -37,15 +39,18 @@
 }
 
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    Image *imageSelected = [self.tableViewManager.fetchedResultsController objectAtIndexPath:indexPath];
+    PictureDetailsViewController *detailVC = [segue destinationViewController];
+    detailVC.imageItem = imageSelected;
+    detailVC.imagesManager = self.imagesManager;
 }
-*/
+
 
 @end

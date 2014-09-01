@@ -12,7 +12,7 @@
 @interface PictureLibraryTableViewManager : NSObject<NSFetchedResultsControllerDelegate, UITableViewDelegate, UITableViewDataSource>
 
 @property (strong, nonatomic) UITableView *tableView;
-
+@property (strong, nonatomic)NSFetchedResultsController *fetchedResultsController;
 
 
 - (instancetype)initWithMOC:(NSManagedObjectContext *)managedObjectContext imagesManager:(ImagesManager *)imagesManager;

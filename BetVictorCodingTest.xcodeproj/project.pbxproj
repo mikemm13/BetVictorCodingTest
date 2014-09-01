@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		491CA5FF19B4676500E56710 /* ImagesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 491CA5FE19B4676500E56710 /* ImagesManager.m */; };
 		491CA60119B46CE900E56710 /* PreloadedImages in Resources */ = {isa = PBXBuildFile; fileRef = 491CA60019B46CE900E56710 /* PreloadedImages */; };
+		491CA60419B47E8300E56710 /* PictureDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 491CA60319B47E8300E56710 /* PictureDetailsViewController.m */; };
 		4926C6B319B36C7F00F769CF /* BetVictor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4926C6B119B36C7F00F769CF /* BetVictor.xcdatamodeld */; };
 		4926C6C619B38CFC00F769CF /* DataPreloaderUtility.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 4926C6C519B38CFC00F769CF /* DataPreloaderUtility.sqlite */; };
 		4926C6CA19B38E8400F769CF /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4926C6C919B38E8400F769CF /* CoreDataManager.m */; };
@@ -49,6 +50,8 @@
 		491CA5FD19B4676500E56710 /* ImagesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagesManager.h; sourceTree = "<group>"; };
 		491CA5FE19B4676500E56710 /* ImagesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagesManager.m; sourceTree = "<group>"; };
 		491CA60019B46CE900E56710 /* PreloadedImages */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PreloadedImages; sourceTree = "<group>"; };
+		491CA60219B47E8300E56710 /* PictureDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureDetailsViewController.h; sourceTree = "<group>"; };
+		491CA60319B47E8300E56710 /* PictureDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureDetailsViewController.m; sourceTree = "<group>"; };
 		4926C6B219B36C7F00F769CF /* BetVictor.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BetVictor.xcdatamodel; sourceTree = "<group>"; };
 		4926C6C519B38CFC00F769CF /* DataPreloaderUtility.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = DataPreloaderUtility.sqlite; sourceTree = "<group>"; };
 		4926C6C819B38E8400F769CF /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
@@ -130,6 +133,8 @@
 				4926C6D519B39FF200F769CF /* PictureLibraryViewController.m */,
 				4926C6D719B3C9DB00F769CF /* PictureLibraryTableViewManager.h */,
 				4926C6D819B3C9DB00F769CF /* PictureLibraryTableViewManager.m */,
+				491CA60219B47E8300E56710 /* PictureDetailsViewController.h */,
+				491CA60319B47E8300E56710 /* PictureDetailsViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -340,6 +345,7 @@
 				4926C6CF19B3904800F769CF /* Image.m in Sources */,
 				4926C6D919B3C9DB00F769CF /* PictureLibraryTableViewManager.m in Sources */,
 				4926C6D619B39FF200F769CF /* PictureLibraryViewController.m in Sources */,
+				491CA60419B47E8300E56710 /* PictureDetailsViewController.m in Sources */,
 				4926C6DD19B3DEFC00F769CF /* PictureLibraryTableViewCell.m in Sources */,
 				493E87E419B228E600647553 /* AppDelegate.m in Sources */,
 				493E87E019B228E600647553 /* main.m in Sources */,
