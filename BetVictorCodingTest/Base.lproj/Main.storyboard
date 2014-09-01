@@ -387,7 +387,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Image details" id="0Kc-7O-zFN"/>
+                    <navigationItem key="navigationItem" title="Image details" id="0Kc-7O-zFN">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="fz8-H2-R13">
+                            <connections>
+                                <action selector="pressedShare:" destination="jFF-rb-eUW" id="YTJ-YI-j5f"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="imageImportDate" destination="USM-3A-8FT" id="eo2-S3-kLa"/>
                         <outlet property="imageName" destination="Nu8-nC-ugX" id="wiA-jQ-Lmc"/>

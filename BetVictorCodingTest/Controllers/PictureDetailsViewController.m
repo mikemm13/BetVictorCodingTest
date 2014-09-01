@@ -121,6 +121,22 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)pressedShare:(id)sender {
+    UIActivityViewController *controller = [[UIActivityViewController alloc] initWithActivityItems:@[self.selectedImage.image] applicationActivities:nil];
+    controller.excludedActivityTypes = @[UIActivityTypePostToWeibo,
+                                         UIActivityTypeMessage,
+                                         UIActivityTypeMail,
+                                         UIActivityTypePrint,
+                                         UIActivityTypeCopyToPasteboard,
+                                         UIActivityTypeAssignToContact,
+                                         UIActivityTypeSaveToCameraRoll,
+                                         UIActivityTypeAddToReadingList,
+                                         UIActivityTypePostToFlickr,
+                                         UIActivityTypePostToVimeo,
+                                         UIActivityTypePostToTencentWeibo,
+                                         UIActivityTypeAirDrop];
+    [self presentViewController:controller animated:YES completion:nil];
+}
 
 /*
 #pragma mark - Navigation
