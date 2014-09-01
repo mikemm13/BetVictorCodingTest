@@ -10,6 +10,13 @@
 		491CA5FF19B4676500E56710 /* ImagesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 491CA5FE19B4676500E56710 /* ImagesManager.m */; };
 		491CA60119B46CE900E56710 /* PreloadedImages in Resources */ = {isa = PBXBuildFile; fileRef = 491CA60019B46CE900E56710 /* PreloadedImages */; };
 		491CA60419B47E8300E56710 /* PictureDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 491CA60319B47E8300E56710 /* PictureDetailsViewController.m */; };
+		491CA60719B488B900E56710 /* PersonalProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 491CA60619B488B900E56710 /* PersonalProfileViewController.m */; };
+		491CA60919B489C100E56710 /* perfil.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 491CA60819B489C100E56710 /* perfil.jpg */; };
+		491CA61C19B4A1A600E56710 /* Github.png in Resources */ = {isa = PBXBuildFile; fileRef = 491CA61819B4A1A600E56710 /* Github.png */; };
+		491CA61D19B4A1A600E56710 /* LinkedIN.png in Resources */ = {isa = PBXBuildFile; fileRef = 491CA61919B4A1A600E56710 /* LinkedIN.png */; };
+		491CA61E19B4A1A600E56710 /* Mail.png in Resources */ = {isa = PBXBuildFile; fileRef = 491CA61A19B4A1A600E56710 /* Mail.png */; };
+		491CA61F19B4A1A600E56710 /* Twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 491CA61B19B4A1A600E56710 /* Twitter.png */; };
+		491CA62519B4A6BF00E56710 /* UserProfileInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 491CA62419B4A6BF00E56710 /* UserProfileInfo.plist */; };
 		4926C6B319B36C7F00F769CF /* BetVictor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4926C6B119B36C7F00F769CF /* BetVictor.xcdatamodeld */; };
 		4926C6C619B38CFC00F769CF /* DataPreloaderUtility.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 4926C6C519B38CFC00F769CF /* DataPreloaderUtility.sqlite */; };
 		4926C6CA19B38E8400F769CF /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4926C6C919B38E8400F769CF /* CoreDataManager.m */; };
@@ -52,6 +59,14 @@
 		491CA60019B46CE900E56710 /* PreloadedImages */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PreloadedImages; sourceTree = "<group>"; };
 		491CA60219B47E8300E56710 /* PictureDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureDetailsViewController.h; sourceTree = "<group>"; };
 		491CA60319B47E8300E56710 /* PictureDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureDetailsViewController.m; sourceTree = "<group>"; };
+		491CA60519B488B900E56710 /* PersonalProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalProfileViewController.h; sourceTree = "<group>"; };
+		491CA60619B488B900E56710 /* PersonalProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalProfileViewController.m; sourceTree = "<group>"; };
+		491CA60819B489C100E56710 /* perfil.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = perfil.jpg; sourceTree = "<group>"; };
+		491CA61819B4A1A600E56710 /* Github.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Github.png; sourceTree = "<group>"; };
+		491CA61919B4A1A600E56710 /* LinkedIN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LinkedIN.png; sourceTree = "<group>"; };
+		491CA61A19B4A1A600E56710 /* Mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mail.png; sourceTree = "<group>"; };
+		491CA61B19B4A1A600E56710 /* Twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Twitter.png; sourceTree = "<group>"; };
+		491CA62419B4A6BF00E56710 /* UserProfileInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UserProfileInfo.plist; sourceTree = "<group>"; };
 		4926C6B219B36C7F00F769CF /* BetVictor.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BetVictor.xcdatamodel; sourceTree = "<group>"; };
 		4926C6C519B38CFC00F769CF /* DataPreloaderUtility.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = DataPreloaderUtility.sqlite; sourceTree = "<group>"; };
 		4926C6C819B38E8400F769CF /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
@@ -119,6 +134,7 @@
 				4926C6CD19B3904800F769CF /* Image.h */,
 				4926C6CE19B3904800F769CF /* Image.m */,
 				4926C6B119B36C7F00F769CF /* BetVictor.xcdatamodeld */,
+				491CA62419B4A6BF00E56710 /* UserProfileInfo.plist */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -135,6 +151,8 @@
 				4926C6D819B3C9DB00F769CF /* PictureLibraryTableViewManager.m */,
 				491CA60219B47E8300E56710 /* PictureDetailsViewController.h */,
 				491CA60319B47E8300E56710 /* PictureDetailsViewController.m */,
+				491CA60519B488B900E56710 /* PersonalProfileViewController.h */,
+				491CA60619B488B900E56710 /* PersonalProfileViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -193,9 +211,14 @@
 		493E87D919B228E600647553 /* BetVictorCodingTest */ = {
 			isa = PBXGroup;
 			children = (
+				491CA61819B4A1A600E56710 /* Github.png */,
+				491CA61919B4A1A600E56710 /* LinkedIN.png */,
+				491CA61A19B4A1A600E56710 /* Mail.png */,
+				491CA61B19B4A1A600E56710 /* Twitter.png */,
 				491CA60019B46CE900E56710 /* PreloadedImages */,
 				4926C6D019B398E400F769CF /* map@2x.png */,
 				4926C6D119B398E400F769CF /* user@2x.png */,
+				491CA60819B489C100E56710 /* perfil.jpg */,
 				4926C6C719B38E7100F769CF /* Manager */,
 				493E87E219B228E600647553 /* AppDelegate.h */,
 				493E87E319B228E600647553 /* AppDelegate.m */,
@@ -314,12 +337,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				491CA61E19B4A1A600E56710 /* Mail.png in Resources */,
+				491CA61D19B4A1A600E56710 /* LinkedIN.png in Resources */,
+				491CA61C19B4A1A600E56710 /* Github.png in Resources */,
 				493E87EC19B228E600647553 /* Images.xcassets in Resources */,
 				4926C6D219B398E400F769CF /* map@2x.png in Resources */,
 				493E87DE19B228E600647553 /* InfoPlist.strings in Resources */,
+				491CA60919B489C100E56710 /* perfil.jpg in Resources */,
+				491CA62519B4A6BF00E56710 /* UserProfileInfo.plist in Resources */,
 				491CA60119B46CE900E56710 /* PreloadedImages in Resources */,
 				4926C6D319B398E400F769CF /* user@2x.png in Resources */,
 				493E87E719B228E600647553 /* Main.storyboard in Resources */,
+				491CA61F19B4A1A600E56710 /* Twitter.png in Resources */,
 				4926C6C619B38CFC00F769CF /* DataPreloaderUtility.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,6 +378,7 @@
 				4926C6DD19B3DEFC00F769CF /* PictureLibraryTableViewCell.m in Sources */,
 				493E87E419B228E600647553 /* AppDelegate.m in Sources */,
 				493E87E019B228E600647553 /* main.m in Sources */,
+				491CA60719B488B900E56710 /* PersonalProfileViewController.m in Sources */,
 				491CA5FF19B4676500E56710 /* ImagesManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

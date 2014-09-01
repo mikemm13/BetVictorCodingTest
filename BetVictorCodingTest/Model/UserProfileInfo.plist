@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Miguel Martín-Nieto Morales</string>
+	<key>twitter</key>
+	<string>@mikemm13</string>
+	<key>linkedin</key>
+	<string>es.linkedin.com/in/mmartinnieto</string>
+	<key>github</key>
+	<string>mikemm13</string>
+	<key>email</key>
+	<string>miguel.martin.nieto.morales@gmail.com</string>
+</dict>
+</plist>

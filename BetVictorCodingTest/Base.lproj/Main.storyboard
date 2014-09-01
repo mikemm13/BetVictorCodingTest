@@ -45,6 +45,9 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="lax-cm-e1Z" kind="push" id="BjG-BJ-Gyb"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Picture Library" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cq6-GT-M9b">
                                 <rect key="frame" x="104" y="207" width="112" height="21"/>
@@ -69,6 +72,100 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="827" y="208"/>
+        </scene>
+        <!--Personal Profile View Controller - Personal profile-->
+        <scene sceneID="Obp-gu-UmF">
+            <objects>
+                <viewController id="lax-cm-e1Z" customClass="PersonalProfileViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6gw-ox-wMf"/>
+                        <viewControllerLayoutGuide type="bottom" id="GRb-Vv-2VR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6oD-PB-qy3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="perfil.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="OTL-zN-ET4">
+                                <rect key="frame" x="92" y="85" width="136" height="136"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="71"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x4r-RC-FZi">
+                                <rect key="frame" x="20" y="229" width="280" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="96e-Cq-Sju">
+                                <rect key="frame" x="92" y="289" width="107" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6yH-iw-fFY">
+                                <rect key="frame" x="92" y="388" width="208" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PwY-Ul-9j8">
+                                <rect key="frame" x="92" y="442" width="206" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sjK-n1-VcW">
+                                <rect key="frame" x="92" y="338" width="88" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Github.png" translatesAutoresizingMaskIntoConstraints="NO" id="302-Le-TUp">
+                                <rect key="frame" x="36" y="331" width="36" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Mail.png" translatesAutoresizingMaskIntoConstraints="NO" id="4gW-Jv-lkp">
+                                <rect key="frame" x="36" y="435" width="36" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Twitter.png" translatesAutoresizingMaskIntoConstraints="NO" id="qjc-b2-4cL">
+                                <rect key="frame" x="36" y="282" width="36" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LinkedIN.png" translatesAutoresizingMaskIntoConstraints="NO" id="Jgh-GX-0Ht">
+                                <rect key="frame" x="36" y="381" width="36" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.37707897933504553" blue="0.37996141323518295" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Personal profile" id="OnO-Fg-UOI"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="PwY-Ul-9j8" id="lmm-DP-6W3"/>
+                        <outlet property="githubLabel" destination="sjK-n1-VcW" id="M5b-hZ-eIU"/>
+                        <outlet property="linkedinLabel" destination="6yH-iw-fFY" id="J74-ak-rLB"/>
+                        <outlet property="nameLabel" destination="x4r-RC-FZi" id="zHT-wM-Q7B"/>
+                        <outlet property="profileImage" destination="OTL-zN-ET4" id="TFM-0F-6lQ"/>
+                        <outlet property="twitterLabel" destination="96e-Cq-Sju" id="a97-LN-aCZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oha-J5-pcn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1271" y="567"/>
         </scene>
         <!--Picture Library View Controller - Picture Library-->
         <scene sceneID="UEe-qF-Z40">
@@ -120,7 +217,7 @@
             </objects>
             <point key="canvasLocation" x="1271" y="-99"/>
         </scene>
-        <!--Picture Details View Controller-->
+        <!--Picture Details View Controller - Image details-->
         <scene sceneID="qDd-Ed-Ftq">
             <objects>
                 <viewController id="jFF-rb-eUW" customClass="PictureDetailsViewController" sceneMemberID="viewController">
@@ -185,7 +282,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="0Kc-7O-zFN"/>
+                    <navigationItem key="navigationItem" title="Image details" id="0Kc-7O-zFN"/>
                     <connections>
                         <outlet property="imageImportDate" destination="USM-3A-8FT" id="eo2-S3-kLa"/>
                         <outlet property="imageName" destination="Nu8-nC-ugX" id="wiA-jQ-Lmc"/>
@@ -223,7 +320,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Github.png" width="60" height="60"/>
+        <image name="LinkedIN.png" width="60" height="60"/>
+        <image name="Mail.png" width="60" height="60"/>
+        <image name="Twitter.png" width="60" height="60"/>
         <image name="map.png" width="35" height="35"/>
+        <image name="perfil.jpg" width="200" height="200"/>
         <image name="user.png" width="35" height="35"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
