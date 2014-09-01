@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "ImagesManager.h"
+#import "ImportImageViewController.h"
 
 
-@interface PictureLibraryViewController : UITableViewController
+@interface PictureLibraryViewController : UITableViewController <ImportImageViewDelegate>
 
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (strong, nonatomic) ImagesManager *imagesManager;

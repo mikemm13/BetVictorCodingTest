@@ -12,5 +12,6 @@
 
 - (void)copyFolder;
 - (UIImage *)loadImageNamed:(NSString *)imageName;
+- (void)saveImage:(UIImage *)image withName:(NSString *)name;
 
 @end

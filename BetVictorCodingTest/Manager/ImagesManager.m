@@ -49,6 +49,13 @@
     return image;
 }
 
+- (void)saveImage:(UIImage *)image withName:(NSString *)name{
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString *writableDBPath = [documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"/Images/%@.jpg", name]];
+    [UIImageJPEGRepresentation(image, 1.0) writeToFile:writableDBPath atomically:YES];
+}
+
 - (BOOL)fileManager:(NSFileManager *)fileManager shouldProceedAfterError:(NSError *)error copyingItemAtPath:(NSString *)srcPath toPath:(NSString *)dstPath{
     if ([error code] == 516) //error code for: The operation couldn’t be completed. File exists
         return YES;

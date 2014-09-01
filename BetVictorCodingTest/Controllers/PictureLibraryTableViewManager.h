@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "ImagesManager.h"
 
+
 @interface PictureLibraryTableViewManager : NSObject<NSFetchedResultsControllerDelegate, UITableViewDelegate, UITableViewDataSource>
 
 @property (strong, nonatomic) UITableView *tableView;

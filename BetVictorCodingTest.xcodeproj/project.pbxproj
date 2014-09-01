@@ -17,6 +17,10 @@
 		491CA61E19B4A1A600E56710 /* Mail.png in Resources */ = {isa = PBXBuildFile; fileRef = 491CA61A19B4A1A600E56710 /* Mail.png */; };
 		491CA61F19B4A1A600E56710 /* Twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 491CA61B19B4A1A600E56710 /* Twitter.png */; };
 		491CA62519B4A6BF00E56710 /* UserProfileInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 491CA62419B4A6BF00E56710 /* UserProfileInfo.plist */; };
+		491CA62819B4BF0C00E56710 /* ImportImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 491CA62719B4BF0C00E56710 /* ImportImageViewController.m */; };
+		491CA62A19B4C7E200E56710 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 491CA62919B4C7E200E56710 /* placeholder.png */; };
+		491CA62D19B4D0BE00E56710 /* RequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 491CA62C19B4D0BE00E56710 /* RequestManager.m */; };
+		491CA63119B4F1B400E56710 /* Image+Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 491CA63019B4F1B400E56710 /* Image+Model.m */; };
 		4926C6B319B36C7F00F769CF /* BetVictor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4926C6B119B36C7F00F769CF /* BetVictor.xcdatamodeld */; };
 		4926C6C619B38CFC00F769CF /* DataPreloaderUtility.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 4926C6C519B38CFC00F769CF /* DataPreloaderUtility.sqlite */; };
 		4926C6CA19B38E8400F769CF /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4926C6C919B38E8400F769CF /* CoreDataManager.m */; };
@@ -67,6 +71,13 @@
 		491CA61A19B4A1A600E56710 /* Mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mail.png; sourceTree = "<group>"; };
 		491CA61B19B4A1A600E56710 /* Twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Twitter.png; sourceTree = "<group>"; };
 		491CA62419B4A6BF00E56710 /* UserProfileInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UserProfileInfo.plist; sourceTree = "<group>"; };
+		491CA62619B4BF0C00E56710 /* ImportImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImportImageViewController.h; sourceTree = "<group>"; };
+		491CA62719B4BF0C00E56710 /* ImportImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImportImageViewController.m; sourceTree = "<group>"; };
+		491CA62919B4C7E200E56710 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		491CA62B19B4D0BE00E56710 /* RequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestManager.h; sourceTree = "<group>"; };
+		491CA62C19B4D0BE00E56710 /* RequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestManager.m; sourceTree = "<group>"; };
+		491CA62F19B4F1B400E56710 /* Image+Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Image+Model.h"; sourceTree = "<group>"; };
+		491CA63019B4F1B400E56710 /* Image+Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Image+Model.m"; sourceTree = "<group>"; };
 		4926C6B219B36C7F00F769CF /* BetVictor.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BetVictor.xcdatamodel; sourceTree = "<group>"; };
 		4926C6C519B38CFC00F769CF /* DataPreloaderUtility.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = DataPreloaderUtility.sqlite; sourceTree = "<group>"; };
 		4926C6C819B38E8400F769CF /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
@@ -128,6 +139,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		491CA62E19B4D2CD00E56710 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				491CA62919B4C7E200E56710 /* placeholder.png */,
+				491CA61819B4A1A600E56710 /* Github.png */,
+				491CA61919B4A1A600E56710 /* LinkedIN.png */,
+				491CA61A19B4A1A600E56710 /* Mail.png */,
+				491CA61B19B4A1A600E56710 /* Twitter.png */,
+				4926C6D019B398E400F769CF /* map@2x.png */,
+				4926C6D119B398E400F769CF /* user@2x.png */,
+				491CA60819B489C100E56710 /* perfil.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		4926C6B719B36D6D00F769CF /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +161,8 @@
 				4926C6CE19B3904800F769CF /* Image.m */,
 				4926C6B119B36C7F00F769CF /* BetVictor.xcdatamodeld */,
 				491CA62419B4A6BF00E56710 /* UserProfileInfo.plist */,
+				491CA62F19B4F1B400E56710 /* Image+Model.h */,
+				491CA63019B4F1B400E56710 /* Image+Model.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -153,6 +181,8 @@
 				491CA60319B47E8300E56710 /* PictureDetailsViewController.m */,
 				491CA60519B488B900E56710 /* PersonalProfileViewController.h */,
 				491CA60619B488B900E56710 /* PersonalProfileViewController.m */,
+				491CA62619B4BF0C00E56710 /* ImportImageViewController.h */,
+				491CA62719B4BF0C00E56710 /* ImportImageViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -164,6 +194,8 @@
 				4926C6C919B38E8400F769CF /* CoreDataManager.m */,
 				491CA5FD19B4676500E56710 /* ImagesManager.h */,
 				491CA5FE19B4676500E56710 /* ImagesManager.m */,
+				491CA62B19B4D0BE00E56710 /* RequestManager.h */,
+				491CA62C19B4D0BE00E56710 /* RequestManager.m */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -211,14 +243,8 @@
 		493E87D919B228E600647553 /* BetVictorCodingTest */ = {
 			isa = PBXGroup;
 			children = (
-				491CA61819B4A1A600E56710 /* Github.png */,
-				491CA61919B4A1A600E56710 /* LinkedIN.png */,
-				491CA61A19B4A1A600E56710 /* Mail.png */,
-				491CA61B19B4A1A600E56710 /* Twitter.png */,
+				491CA62E19B4D2CD00E56710 /* Images */,
 				491CA60019B46CE900E56710 /* PreloadedImages */,
-				4926C6D019B398E400F769CF /* map@2x.png */,
-				4926C6D119B398E400F769CF /* user@2x.png */,
-				491CA60819B489C100E56710 /* perfil.jpg */,
 				4926C6C719B38E7100F769CF /* Manager */,
 				493E87E219B228E600647553 /* AppDelegate.h */,
 				493E87E319B228E600647553 /* AppDelegate.m */,
@@ -348,6 +374,7 @@
 				491CA60119B46CE900E56710 /* PreloadedImages in Resources */,
 				4926C6D319B398E400F769CF /* user@2x.png in Resources */,
 				493E87E719B228E600647553 /* Main.storyboard in Resources */,
+				491CA62A19B4C7E200E56710 /* placeholder.png in Resources */,
 				491CA61F19B4A1A600E56710 /* Twitter.png in Resources */,
 				4926C6C619B38CFC00F769CF /* DataPreloaderUtility.sqlite in Resources */,
 			);
@@ -368,10 +395,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				491CA62819B4BF0C00E56710 /* ImportImageViewController.m in Sources */,
 				4926C6CA19B38E8400F769CF /* CoreDataManager.m in Sources */,
 				4926C6B319B36C7F00F769CF /* BetVictor.xcdatamodeld in Sources */,
+				491CA62D19B4D0BE00E56710 /* RequestManager.m in Sources */,
 				493E87EA19B228E600647553 /* MainViewController.m in Sources */,
 				4926C6CF19B3904800F769CF /* Image.m in Sources */,
+				491CA63119B4F1B400E56710 /* Image+Model.m in Sources */,
 				4926C6D919B3C9DB00F769CF /* PictureLibraryTableViewManager.m in Sources */,
 				4926C6D619B39FF200F769CF /* PictureLibraryViewController.m in Sources */,
 				491CA60419B47E8300E56710 /* PictureDetailsViewController.m in Sources */,
