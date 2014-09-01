@@ -26,6 +26,29 @@
     }
 }
 
+- (UIImage *)loadImageNamed:(NSString *)imageName{
+    UIImage *image;
+    NSString *path;
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    path = [[paths objectAtIndex:0] stringByAppendingPathComponent:@"Images"];
+    path = [path stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.jpg",imageName]];
+    
+    if ([[NSFileManager defaultManager] fileExistsAtPath:path])
+    {
+        //File exists
+        NSData *file = [[NSData alloc] initWithContentsOfFile:path];
+        if (file)
+        {
+            image = [UIImage imageWithData:file];
+        }
+    }
+    else
+    {
+        NSLog(@"File does not exist");
+    }
+    return image;
+}
+
 - (BOOL)fileManager:(NSFileManager *)fileManager shouldProceedAfterError:(NSError *)error copyingItemAtPath:(NSString *)srcPath toPath:(NSString *)dstPath{
     if ([error code] == 516) //error code for: The operation couldn’t be completed. File exists
         return YES;

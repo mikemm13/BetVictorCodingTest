@@ -27,4 +27,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    [segue.destinationViewController setValue:self.managedObjectContext forKeyPath:@"managedObjectContext"];
+    [segue.destinationViewController setValue:self.imagesManager forKey:@"imagesManager"];
+}
+
 @end

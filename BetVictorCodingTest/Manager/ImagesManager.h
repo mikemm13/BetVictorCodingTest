@@ -11,5 +11,6 @@
 @interface ImagesManager : NSObject <NSFileManagerDelegate>
 
 - (void)copyFolder;
+- (UIImage *)loadImageNamed:(NSString *)imageName;
 
 @end

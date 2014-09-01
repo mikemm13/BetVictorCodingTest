@@ -25,6 +25,7 @@
     MainViewController *mainViewController = (MainViewController *)navigationController.topViewController;
     mainViewController.managedObjectContext = self.coreDataManager.managedObjectContext;
     [self.imagesManager copyFolder];
+    mainViewController.imagesManager = self.imagesManager;
     return YES;
 }
 
